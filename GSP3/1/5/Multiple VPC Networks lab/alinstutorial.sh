@@ -46,8 +46,8 @@ gsutil mb -l $REGION gs://$DEVSHELL_PROJECT_ID-bucket
 
 gcloud pubsub topics create $TOPIC_NAME
 
-mkdir quicklab
-cd quicklab
+mkdir alinstutorial
+cd alinstutorial
 
 cat > index.js <<'EOF_END'
 const functions = require('@google-cloud/functions-framework');
@@ -185,7 +185,7 @@ while true; do
     break
   else
     echo "Waiting for Cloud Run service to be created..."
-    echo "Meantime Subscribe to Quicklab[https://www.youtube.com/@quick_lab]."
+    echo "Meantime Subscribe to Alins Tutorial."
     sleep 10
   fi
 done
