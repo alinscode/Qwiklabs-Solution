@@ -37,12 +37,11 @@ gcloud compute instance-templates create lb-backend-template \
      echo "Page served from: $vm_hostname" | \
      tee /var/www/html/index.html
      systemctl restart apache2'
-```
-```cmd
+
+
 gcloud compute instance-groups managed create lb-backend-group \
    --template=lb-backend-template --size=2 --zone=ZONE
-```
-```cmd
+
 gcloud compute firewall-rules create fw-allow-health-check \
   --network=default \
   --action=allow \
@@ -50,38 +49,36 @@ gcloud compute firewall-rules create fw-allow-health-check \
   --source-ranges=130.211.0.0/22,35.191.0.0/16 \
   --target-tags=allow-health-check \
   --rules=tcp:80
-```
-```cmd
+
 gcloud compute addresses create lb-ipv4-1 \
   --ip-version=IPV4 \
   --global
-```
-```cmd
+
+
 gcloud compute addresses describe lb-ipv4-1 \
   --format="get(address)" \
   --global
-```
-```cmd
+
+
 gcloud compute health-checks create http http-basic-check \
   --port 80
-```
-```cmd
+
+
 gcloud compute backend-services create web-backend-service \
   --protocol=HTTP \
   --port-name=http \
   --health-checks=http-basic-check \
   --global
-```
-```cmd
+
+
 gcloud compute url-maps create web-map-http \
     --default-service web-backend-service
-```
-```cmd
+
+
 gcloud compute target-http-proxies create http-lb-proxy \
     --url-map web-map-http
-```
 
-```cmd
+
 gcloud compute forwarding-rules create http-content-rule \
    --address=lb-ipv4-1\
    --global \
