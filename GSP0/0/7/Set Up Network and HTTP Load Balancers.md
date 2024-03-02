@@ -14,7 +14,8 @@ sudo chmod +x alinstutorial.sh
 
 ./alinstutorial.sh
 ```
-
+## When repeated text appear on cloudshell
+### Press Ctrl + C and run the following command
 ```cmd
 gcloud compute instance-templates create lb-backend-template \
    --region=Region \
