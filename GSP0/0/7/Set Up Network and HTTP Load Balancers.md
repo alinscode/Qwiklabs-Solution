@@ -1,3 +1,4 @@
+# Run in Cloud Shell
 ```cmd
 export REGION=
 ```
