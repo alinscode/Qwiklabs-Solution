@@ -1,4 +1,4 @@
-### Run in Cloudshell
+# Run in Cloudshell
 ```cmd
 export GOOGLE_CLOUD_PROJECT=$(gcloud config get-value core/project)
 gcloud iam service-accounts create my-natlang-sa \
@@ -9,7 +9,7 @@ gcloud compute ssh linux-instance
 
 ```
 
-# Press y , ENTER > ENTER > ENTER > n, ENTER
+### Press y , ENTER > ENTER > ENTER > n, ENTER
 
 ```cmd
 gcloud ml language analyze-entities \
