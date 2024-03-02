@@ -20,7 +20,7 @@ sudo chmod +x alinstutorial.sh
 
 ```cmd
 gcloud compute instance-templates create lb-backend-template \
-   --region=Region \
+   --region=REGION \
    --network=default \
    --subnet=default \
    --tags=allow-health-check \
@@ -40,7 +40,7 @@ gcloud compute instance-templates create lb-backend-template \
 ```
 ```cmd
 gcloud compute instance-groups managed create lb-backend-group \
-   --template=lb-backend-template --size=2 --zone=Zone
+   --template=lb-backend-template --size=2 --zone=ZONE
 ```
 ```cmd
 gcloud compute firewall-rules create fw-allow-health-check \
