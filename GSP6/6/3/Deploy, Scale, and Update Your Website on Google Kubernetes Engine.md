@@ -9,8 +9,8 @@ sudo chmod +x alinstutorial1.sh
 
 ./alinstutorial1.sh
 ```
-
-## Press Ctrl + C, then run the following command in cloudshell
+## Get Score on 1st Task
+### Press Ctrl + C, then run the following command in cloudshell
 ```cmd
 curl -LO raw.githubusercontent.com/alinscode/Qwiklabs-Solution/main/GSP6/6/3/alinstutorial2.sh
 
