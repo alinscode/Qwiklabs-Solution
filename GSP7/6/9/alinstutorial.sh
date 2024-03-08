@@ -70,7 +70,7 @@ BACKEND_SERVICE=$(gcloud compute backend-services list | grep NAME | cut -d ' ' 
 
 gcloud compute backend-services get-health $BACKEND_SERVICE --global
 
-sleep 800
+sleep 400
 
 #----------------CLICK CHECK MY PROGRESS FOR TASK 1 BEFORE MOVING AHEAD -----------
 
