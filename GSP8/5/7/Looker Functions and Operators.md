@@ -29,6 +29,7 @@ Title:- Flight Count by Departure Week and Distance Tier
 # TASK 2:-
 
 ### Place in `faa` model
+```cmd
 explore: +flights {
   query: start_from_here{
       dimensions: [aircraft_origin.state]
@@ -36,6 +37,7 @@ explore: +flights {
       filters: [flights.depart_date: "2000"]
     }
   }
+```
 
 Title:- Percent of Flights Cancelled by State in 2000
 
@@ -45,6 +47,7 @@ Title:- Percent of Flights Cancelled by State in 2000
 # TASK 3:-
 
 ### Place in `faa` model
+```cmd
 explore: +flights {
     query: start_from_here{
       dimensions: [aircraft_origin.state]
@@ -52,7 +55,7 @@ explore: +flights {
       filters: [flights.depart_date: "2004"]
     }
 }
-
+```
 Formula
 ${flights.cancelled_count}/${flights.count}
 
@@ -66,13 +69,14 @@ Title:- Percent of Flights Cancelled by Aircraft Origin 2004
 # TASK 4:-
 
 ### Place in `faa` model
+```cmd
 explore: +flights {
     query: start_from_here{
       dimensions: [carriers.name]
       measures: [total_distance]
     }
 }
-
+```
 
 ${flights.total_distance}/${flights.total_distance:total}
 
@@ -87,6 +91,7 @@ Title:- Percent of Total Distance Flown by Carrier
 # TASK 5:-
 
 ### Place in `faa` model
+```cmd
 explore: +flights {
     query:start_from_here {
       dimensions: [depart_year, distance_tiered]
@@ -94,7 +99,7 @@ explore: +flights {
       filters: [flights.depart_date: "after 2000/01/01"]
     }
 }
-
+```
 
 
 Formula
