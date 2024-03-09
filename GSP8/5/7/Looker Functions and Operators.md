@@ -1,5 +1,5 @@
 
-# TASK 1
+<h1>TASK 1</h1>
 
 ### Place in `faa` model
 ```cmd
@@ -28,8 +28,7 @@ Title:- `Flight Count by Departure Week and Distance Tier`
 
 
 
-# TASK 2
-
+<h1>TASK 2</h1>
 ### Place in `faa` model
 ```cmd
 explore: +flights {
@@ -48,7 +47,7 @@ Title:- `Percent of Flights Cancelled by State in 2000`
 
 
 
-# TASK 3
+<h1>TASK 3</h1>
 
 ### Place in `faa` model
 ```cmd
