@@ -1,7 +1,7 @@
 
 # TASK 1:-
 
-###Place in `faa` model
+### Place in `faa` model
 explore: +flights {
   query: start_from_here{
       dimensions: [depart_week, distance_tiered]
@@ -25,9 +25,9 @@ Title:- Flight Count by Departure Week and Distance Tier
 
 
 
-#TASK 2:-
+# TASK 2:-
 
-###Place in `faa` model
+### Place in `faa` model
 explore: +flights {
   query: start_from_here{
       dimensions: [aircraft_origin.state]
@@ -37,7 +37,7 @@ explore: +flights {
   }
 
 
-#TASK 3:-
+# TASK 3:-
 
 ### Place in `faa` model
 explore: +flights {
@@ -49,7 +49,7 @@ explore: +flights {
 }
 
 
-#TASK 4:-
+# TASK 4:-
 
 ### Place in `faa` model
 explore: +flights {
@@ -60,7 +60,7 @@ explore: +flights {
 }
 
 
-#TASK 5:-
+# TASK 5:-
 
 ### Place in `faa` model
 explore: +flights {
