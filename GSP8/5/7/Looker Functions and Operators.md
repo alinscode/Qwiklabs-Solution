@@ -39,6 +39,8 @@ explore: +flights {
   }
 ```
 
+Select Line in Visualization Bar
+
 Title:- `Percent of Flights Cancelled by State in 2000`
 
 
@@ -56,7 +58,9 @@ explore: +flights {
     }
 }
 ```
-Formula `${flights.cancelled_count}/${flights.count}`
+
+Click `+ ADD` button > Table Calculation
+- Formula `${flights.cancelled_count}/${flights.count}`
 
 Gear icon next to Run, and select Save > As a Look
 
@@ -76,7 +80,8 @@ explore: +flights {
     }
 }
 ```
-Fomula `${flights.total_distance}/${flights.total_distance:total}`
+Click `+ ADD` button > Table Calculation
+- Fomula `${flights.total_distance}/${flights.total_distance:total}`
 
 Choose bar in Visualization bar
 
@@ -99,8 +104,8 @@ explore: +flights {
 }
 ```
 
-
-Formula `(${flights.count}-pivot_offset(${flights.count}, -1))/pivot_offset(${flights.count}, -1)`
+Click `+ ADD` button > Table Calculation
+- Formula `(${flights.count}-pivot_offset(${flights.count}, -1))/pivot_offset(${flights.count}, -1)`
 
 Search `Depart Date` in dimension group, click on the Pivot data button next to the `Year` dimension
 
