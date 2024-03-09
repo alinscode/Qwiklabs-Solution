@@ -11,14 +11,14 @@ explore: +flights {
     }
   }
 ```
-Search "Distance Tiered"> Pivot
+Search `Distance Tiered`> Pivot
 
 Click Edit > Plot
 Select the Legend Align as Left
 
 Gear icon next to Run, and select Save > As a Look.
 
-Title:- Flight Count by Departure Week and Distance Tier
+Title:- `Flight Count by Departure Week and Distance Tier`
 
 
 
@@ -39,7 +39,7 @@ explore: +flights {
   }
 ```
 
-Title:- Percent of Flights Cancelled by State in 2000
+Title:- `Percent of Flights Cancelled by State in 2000`
 
 
 
@@ -56,8 +56,7 @@ explore: +flights {
     }
 }
 ```
-Formula
-${flights.cancelled_count}/${flights.count}
+Formula `${flights.cancelled_count}/${flights.count}`
 
 Gear icon next to Run, and select Save > As a Look
 
@@ -77,14 +76,13 @@ explore: +flights {
     }
 }
 ```
-
-${flights.total_distance}/${flights.total_distance:total}
+Fomula `${flights.total_distance}/${flights.total_distance:total}`
 
 Choose bar in Visualization bar
 
 Run> Gear icon next to Run, and select Save > As a Look
 
-Title:- Percent of Total Distance Flown by Carrier
+Title:- `Percent of Total Distance Flown by Carrier`
 
 
 
@@ -102,10 +100,9 @@ explore: +flights {
 ```
 
 
-Formula
-(${flights.count}-pivot_offset(${flights.count}, -1))/pivot_offset(${flights.count}, -1)
+Formula `(${flights.count}-pivot_offset(${flights.count}, -1))/pivot_offset(${flights.count}, -1)`
 
-Search Depart Date in dimension group, click on the Pivot data button next to the Year dimension
+Search `Depart Date` in dimension group, click on the Pivot data button next to the `Year` dimension
 
 Choose Table in Visualization Bar
 
@@ -114,4 +111,4 @@ Click Edit > Formatting.
 
 Click on Run > Gear icon next to Run, and select Save > As a Look
 
-Title:- YoY Percent Change in Flights flown by Distance, 2000-Present
+Title:- `YoY Percent Change in Flights flown by Distance, 2000-Present`
