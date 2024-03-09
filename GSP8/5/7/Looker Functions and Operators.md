@@ -23,12 +23,12 @@ Gear icon next to Run, and select Save > As a Look.
 Title:- `Flight Count by Departure Week and Distance Tier`
 
 
-
+<hr>
 
 
 
 # TASK 2
-<h3> Place in `faa` model </h3>
+### Place in `faa` model
 ```cmd
 explore: +flights {
   query: start_from_here{
