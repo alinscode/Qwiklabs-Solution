@@ -1,5 +1,5 @@
 
-# TASK 1:-
+# TASK 1
 
 ### Place in `faa` model
 ```cmd
@@ -28,7 +28,7 @@ Title:- `Flight Count by Departure Week and Distance Tier`
 
 
 
-# TASK 2:-
+# TASK 2
 
 ### Place in `faa` model
 ```cmd
@@ -48,7 +48,7 @@ Title:- `Percent of Flights Cancelled by State in 2000`
 
 
 
-# TASK 3:-
+# TASK 3
 
 ### Place in `faa` model
 ```cmd
@@ -71,7 +71,7 @@ Title:- Percent of Flights Cancelled by Aircraft Origin 2004
 
 
 
-# TASK 4:-
+# TASK 4
 
 ### Place in `faa` model
 ```cmd
@@ -95,7 +95,7 @@ Title:- `Percent of Total Distance Flown by Carrier`
 
 
 
-# TASK 5:-
+# TASK 5
 
 ### Place in `faa` model
 ```cmd
