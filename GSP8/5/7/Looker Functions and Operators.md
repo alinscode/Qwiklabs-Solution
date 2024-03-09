@@ -109,7 +109,7 @@ Click `+ ADD` button > Table Calculation
 
 Search `Depart Date` in dimension group, click on the Pivot data button next to the `Year` dimension
 
-Choose Table</b> in Visualization Bar
+Choose <b>Table</b> in Visualization Bar
 
 Click Edit > Formatting.
 - Toggle the Enable Conditional Formatting to on
