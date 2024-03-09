@@ -13,7 +13,7 @@ explore: +flights {
 ```
 Choose <b>Line</b> in Visualization bar
 
-Search <b>`Distance Tiered`</b> Pivot
+Search `<b>Distance Tiered</b>` > Pivot
 
 Click Edit > Plot
 - Select the Legend Align as Left
@@ -111,7 +111,7 @@ explore: +flights {
 Click `+ ADD` button > Table Calculation
 - Formula `(${flights.count}-pivot_offset(${flights.count}, -1))/pivot_offset(${flights.count}, -1)`
 
-Search <b>`Depart Date`</b> in dimension group, click on the Pivot data button next to the <b>`Year`</b> dimension
+Search `<b>Depart Date</b>` in dimension group, click on the Pivot data button next to the `<b>Year</b>` dimension
 
 Choose <b>Table</b> in Visualization Bar
 
