@@ -2,6 +2,7 @@
 # TASK 1:-
 
 ### Place in `faa` model
+```cmd
 explore: +flights {
   query: start_from_here{
       dimensions: [depart_week, distance_tiered]
@@ -9,7 +10,7 @@ explore: +flights {
       filters: [flights.depart_date: "2003"]
     }
   }
-
+```
 Search "Distance Tiered"> Pivot
 
 Click Edit > Plot
