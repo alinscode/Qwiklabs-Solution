@@ -83,7 +83,7 @@ explore: +flights {
 Click `+ ADD` button > Table Calculation
 - Fomula `${flights.total_distance}/${flights.total_distance:total}`
 
-Choose bar in Visualization bar
+Choose `Bar` in Visualization bar
 
 Run> Gear icon next to Run, and select Save > As a Look
 
@@ -109,10 +109,11 @@ Click `+ ADD` button > Table Calculation
 
 Search `Depart Date` in dimension group, click on the Pivot data button next to the `Year` dimension
 
-Choose Table in Visualization Bar
+Choose Table</b> in Visualization Bar
 
 Click Edit > Formatting.
--Toggle the Enable Conditional Formatting to on. Accept the default options and click Add a Rule.
+- Toggle the Enable Conditional Formatting to on
+- Accept the default options and click Add a Rule.
 
 Click on Run > Gear icon next to Run, and select Save > As a Look
 
