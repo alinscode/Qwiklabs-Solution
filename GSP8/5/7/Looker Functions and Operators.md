@@ -27,9 +27,8 @@ Title:- `Flight Count by Departure Week and Distance Tier`
 
 
 
-
-<h1>TASK 2</h1>
-### Place in `faa` model
+# TASK 2
+<h3> Place in `faa` model </h3>
 ```cmd
 explore: +flights {
   query: start_from_here{
