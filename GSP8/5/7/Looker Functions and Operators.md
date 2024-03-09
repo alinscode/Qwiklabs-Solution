@@ -11,6 +11,8 @@ explore: +flights {
     }
   }
 ```
+Choose <b>Line</b> in Visualization bar
+
 Search `Distance Tiered`> Pivot
 
 Click Edit > Plot
