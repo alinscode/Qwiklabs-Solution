@@ -36,6 +36,10 @@ explore: +flights {
     }
   }
 
+Title:- Percent of Flights Cancelled by State in 2000
+
+
+
 
 # TASK 3:-
 
@@ -47,6 +51,15 @@ explore: +flights {
       filters: [flights.depart_date: "2004"]
     }
 }
+
+Formula
+${flights.cancelled_count}/${flights.count}
+
+Gear icon next to Run, and select Save > As a Look
+
+Title:- Percent of Flights Cancelled by Aircraft Origin 2004
+
+
 
 
 # TASK 4:-
@@ -60,6 +73,16 @@ explore: +flights {
 }
 
 
+${flights.total_distance}/${flights.total_distance:total}
+
+Choose bar in Visualization bar
+
+Run> Gear icon next to Run, and select Save > As a Look
+
+Title:- Percent of Total Distance Flown by Carrier
+
+
+
 # TASK 5:-
 
 ### Place in `faa` model
@@ -70,3 +93,19 @@ explore: +flights {
       filters: [flights.depart_date: "after 2000/01/01"]
     }
 }
+
+
+
+Formula
+(${flights.count}-pivot_offset(${flights.count}, -1))/pivot_offset(${flights.count}, -1)
+
+Search Depart Date in dimension group, click on the Pivot data button next to the Year dimension
+
+Choose Table in Visualization Bar
+
+Click Edit > Formatting.
+-Toggle the Enable Conditional Formatting to on. Accept the default options and click Add a Rule.
+
+Click on Run > Gear icon next to Run, and select Save > As a Look
+
+Title:- YoY Percent Change in Flights flown by Distance, 2000-Present
