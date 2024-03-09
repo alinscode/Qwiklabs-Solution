@@ -24,8 +24,7 @@ Title:- `Flight Count by Departure Week and Distance Tier`
 
 
 <hr>
-<br>
-<br>
+<br> 
 
 
 # TASK 2
@@ -46,6 +45,8 @@ Title:- `Percent of Flights Cancelled by State in 2000`
 
 
 
+<hr>
+<br>
 
 <h1>TASK 3</h1>
 
@@ -69,6 +70,8 @@ Title:- Percent of Flights Cancelled by Aircraft Origin 2004
 
 
 
+<hr>
+<br>
 
 # TASK 4
 
@@ -93,6 +96,8 @@ Run> Gear icon next to Run, and select Save > As a Look
 Title:- `Percent of Total Distance Flown by Carrier`
 
 
+<hr>
+<br>
 
 # TASK 5
 
