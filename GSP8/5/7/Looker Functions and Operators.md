@@ -82,6 +82,7 @@ explore: +flights {
     }
 }
 ```
+Check the <b>`Table` Checkbox</b> in 3rd Bar (below Visualization bar).
 
 Click <b>+ ADD</b> button > Table Calculation
 - Fomula `${flights.total_distance}/${flights.total_distance:total}`
