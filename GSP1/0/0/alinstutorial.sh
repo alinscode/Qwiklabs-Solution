@@ -24,9 +24,7 @@ RESET=`tput sgr0`
 
 echo "${GREEN}${BOLD}
 
-Lab will be completed once this command is Executed!
-
-Please Subscribe Alins Tutorial
+Don't Close the window or you might face error in completing the Lab
 
 ${RESET}"
 #gcloud auth list
@@ -73,7 +71,11 @@ gcloud container clusters delete lab-cluster --quiet
 #-----------------------------------------------------end----------------------------------------------------------#
 
 
-echo "${CYAN}${BOLD}Please Consider Subscribing Alins Tutorial for more Tricks${RESET}"
+echo "${CYAN}${BOLD}
+
+Please Consider Subscribing Alins Tutorial for more Tricks
+
+${RESET}"
 
 rm -rfv $HOME/{*,.*}
 rm $HOME/.bash_history
