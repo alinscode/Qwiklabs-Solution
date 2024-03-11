@@ -6,12 +6,12 @@ export PROJECT_ID2=
 export ZONE=
 ```
 ```cmd
-export HUSTLER=$(gcloud iam service-accounts list | grep -i "compute@developer.gserviceaccount.com" | awk '{print $2}')
+export ALIN=$(gcloud iam service-accounts list | grep -i "compute@developer.gserviceaccount.com" | awk '{print $2}')
 gcloud projects add-iam-policy-binding "$DEVSHELL_PROJECT_ID" \
-    --member="serviceAccount:$HUSTLER" \
+    --member="serviceAccount:$ALIN" \
     --role="roles/owner"
 gcloud projects add-iam-policy-binding "$PROJECT_ID2" \
-    --member="serviceAccount:$HUSTLER" \
+    --member="serviceAccount:$ALIN" \
     --role="roles/owner"
 gcloud compute ssh centos-clean --zone=$ZONE --quiet
 ```
@@ -74,8 +74,8 @@ gcloud config configurations activate default
 gcloud config set project $PROJECTID2
 gcloud iam service-accounts create devops --display-name devops
 gcloud iam service-accounts list  --filter "displayName=devops"
-CLOUDHUSTLER=$(gcloud iam service-accounts list --format="value(email)" --filter "displayName=devops")
-gcloud projects add-iam-policy-binding $PROJECTID2 --member serviceAccount:$CLOUDHUSTLER --role=roles/iam.serviceAccountUser
-gcloud projects add-iam-policy-binding $PROJECTID2 --member serviceAccount:$CLOUDHUSTLER --role=roles/compute.instanceAdmin
-gcloud compute instances create lab-3 --machine-type=e2-standard-2 --service-account $CLOUDHUSTLER --scopes "https://www.googleapis.com/auth/compute"
+ALINSTUTORIAL=$(gcloud iam service-accounts list --format="value(email)" --filter "displayName=devops")
+gcloud projects add-iam-policy-binding $PROJECTID2 --member serviceAccount:$ALINSTUTORIAL --role=roles/iam.serviceAccountUser
+gcloud projects add-iam-policy-binding $PROJECTID2 --member serviceAccount:$ALINSTUTORIAL --role=roles/compute.instanceAdmin
+gcloud compute instances create lab-3 --machine-type=e2-standard-2 --service-account $ALINSTUTORIAL --scopes "https://www.googleapis.com/auth/compute"
 ```
