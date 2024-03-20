@@ -1,3 +1,4 @@
+gcloud compute ssh linux-instance
 
 cat > request.json <<EOF_END
 {
