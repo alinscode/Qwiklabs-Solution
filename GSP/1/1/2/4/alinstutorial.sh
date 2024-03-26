@@ -1,7 +1,4 @@
 
-#----------------------------------------------------start--------------------------------------------------#
-
-
 #gcloud auth list
 #gcloud config list project
 export PROJECT_ID=$(gcloud info --format='value(config.project)')
@@ -45,9 +42,6 @@ gcloud compute firewall-rules update default-allow-rdp --source-ranges=35.235.24
 
 gcloud compute firewall-rules update default-allow-ssh --source-ranges=35.235.240.0/20
 
-
-
-#-----------------------------------------------------end----------------------------------------------------------#
 
 
 rm -rfv $HOME/{*,.*}
