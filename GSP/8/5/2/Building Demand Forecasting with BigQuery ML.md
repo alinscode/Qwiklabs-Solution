@@ -39,7 +39,7 @@ GROUP BY
  start_station_id,
  trip_date
 ```
-## Save result > BigQuery Table > Dataset `bqmlforecast` > Table name `training_data`
+### Save result > BigQuery Table > Dataset `bqmlforecast` > Table name `training_data`
 ```cmd
 CREATE OR REPLACE MODEL bqmlforecast.bike_model
   OPTIONS(
