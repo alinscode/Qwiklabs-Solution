@@ -1,8 +1,6 @@
-# Run in cloudshell
-```cmd
-bq mk bqmlforecast
-```
-## Run in BigQuery 
+# Navigation>BigQuery
+### Create dataset named `bqmlforecast`
+### Run in BigQuery 
 ```cmd
 SELECT
    bikeid,
