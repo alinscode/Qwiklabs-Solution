@@ -13,12 +13,12 @@ kubectl apply -f release/kubernetes-manifests.yaml
 sleep 30
 
 gcloud logging metrics create Error_Rate_SLI \
-  --description="subscribe to quicklab" \
+  --description="Subscribe to Alins Tutorial" \
   --log-filter="resource.type=\"k8s_container\" severity=ERROR labels.\"k8s-pod/app\": \"recommendationservice\"" 
 
 
 
-cat > quicklab.json <<EOF_END
+cat > alinscode.json <<EOF_END
 {
   "displayName": "Error Rate SLI",
   "userLabels": {},
@@ -53,4 +53,4 @@ cat > quicklab.json <<EOF_END
 }
 EOF_END
 
-gcloud alpha monitoring policies create --policy-from-file="quicklab.json"
+gcloud alpha monitoring policies create --policy-from-file="alinscode.json"
