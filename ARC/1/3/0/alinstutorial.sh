@@ -1,6 +1,4 @@
 
-
-
 cat > analyze-request.json <<EOF
 {
   "document":{
