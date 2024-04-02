@@ -1,5 +1,5 @@
 ### Navigation menu > BigQuery
-#### Create Dataset named``bq_logs``
+#### Create Dataset named `bq_logs`
 ### Navigation menu > Logging > Log Router > Create Sink
 **Name :** `JobComplete`</br>
 **Sink Service :** `BigQuery dataset`</br>
