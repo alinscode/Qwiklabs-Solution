@@ -1,4 +1,9 @@
 ## Run in Cloudshell
+```cmd
+gcloud auth list
+gcloud config list project
+```
+
 ### Don't let your screen off, otherwise you will face error
 ```cmd
 export REGION=
