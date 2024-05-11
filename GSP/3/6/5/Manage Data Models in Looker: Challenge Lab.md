@@ -1,6 +1,6 @@
 # Task 1
 ## Go to order_items.view and add the following code Line No 128
-cmd```
+```cmd
 dimension: profit {
 label: "profit"
 description: "sgggf"
@@ -20,7 +20,7 @@ value_format_name: usd
 
 
 ## Go to training_ecommerce.model add below lines of code. [Make sure to change the NAME_DATAGROUP]
-cmd```
+```cmd
 datagroup: NAME_DATAGROUP {
 max_cache_age: "168 hours"
 }
@@ -30,7 +30,7 @@ persist_with: NAME_DATAGROUP
 
 # Task 2
 ## Go to training_ecommerce.model add below lines of code. [Make sure to change the NAME_DATAGROUP]
-cmd```
+```cmd
 explore: +order_items {
 label: ""
 aggregate_table: weekly_aggregate_revenue_profit {
@@ -48,7 +48,7 @@ increment_key: "created_date"
 
 # Task 3
 ## Remove all default code and add this code: [Make sure to change the VIEW_NAME:]
-cmd```
+```cmd
 view: VIEW_NAME {
 extension: required
 
@@ -86,7 +86,7 @@ sql: ${TABLE}.longitude ;;
 ```
 
 ## Go to users.view add this code
-cmd```
+```cmd
 view: users {
   sql_table_name: `cloud-training-demos.looker_ecomm.users`
     ;;
@@ -188,7 +188,7 @@ view: users {
 ```
 
 ## Task 4
-cmd```
+```cmd
 view: users {
   sql_table_name: `cloud-training-demos.looker_ecomm.users`
     ;;
@@ -294,7 +294,7 @@ view: users {
 ```
 
 ## Go to Product file and add this following code
-cmd```
+```cmd
 view: products {
   sql_table_name: `cloud-training-demos.looker_ecomm.products`
     ;;
