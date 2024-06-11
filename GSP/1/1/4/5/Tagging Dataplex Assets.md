@@ -29,9 +29,9 @@ VALUE 2:- `NO`
 Done>Create
 
 
-## Findings
+## SEARCH
 
-SEARCH customer_details > Attach Tags >
+ customer_details > Attach Tags >
 
 check zip state last_name country email latitude first_name city longitude
 
