@@ -23,6 +23,7 @@ Name:- `Protected Data Flag`
 Type `Enumerated`
 
 Value 1:- `YES`
+
 VALUE 2:- `NO`
 Done>Create
 
